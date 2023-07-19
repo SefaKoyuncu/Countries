@@ -3,7 +3,26 @@
     <style name="Base.Theme.Countries" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="Theme.Countries" parent="Base.Theme.Countries" />
+
+    <style name="RoundedSquare">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="ToolbarExpandedTextAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="ToolbarCollapsedTextAppearance" parent="ThemeOverlay.AppCompat.Light">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>
