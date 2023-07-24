@@ -11,8 +11,12 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/fromMaintoDetails"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
@@ -20,7 +24,10 @@
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <action
-            android:id="@+id/action_detailsFragment_to_mainFragment"
+            android:id="@+id/fromDetailstoMain"
             app:destination="@id/mainFragment" />
+        <argument
+            android:name="country"
+            app:argType="com.sefa.countries.data.model.Countries" />
     </fragment>
 </navigation>

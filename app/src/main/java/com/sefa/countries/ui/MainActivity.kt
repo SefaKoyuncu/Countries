@@ -3,7 +3,9 @@ package com.sefa.countries.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.sefa.countries.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

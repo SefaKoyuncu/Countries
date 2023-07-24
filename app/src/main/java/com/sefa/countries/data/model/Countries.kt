@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName
 @kotlinx.parcelize.Parcelize
 data class Countries (
   @PrimaryKey //autoGenerate = true
-  @SerializedName("id"       ) var id       : String? = null,
+  @SerializedName("id"       ) var id       : Int? = 0,
   @SerializedName("name"     ) var name     : String? = null,
   @SerializedName("image"    ) var image    : String? = null,
   @SerializedName("text"     ) var text     : String? = null,
